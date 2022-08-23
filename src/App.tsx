@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import ToDoList from "./ToDoList";
 
-function App() {
-  const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,7 +22,10 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}`;
+  }
+`;
+
+function App() {
   return (
     <>
       <GlobalStyle />
